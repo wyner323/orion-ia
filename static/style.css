@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #002a7d, #0050ff);
+    color: white;
+    text-align: center;
+}
+.container {
+    padding: 2em;
+}
+input[type="text"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    width: 300px;
+    margin: 1em 0;
+}
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #0050ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.resultado {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #00ffcc;
+}
+.erro {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #ff4444;
+}
