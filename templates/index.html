@@ -1,30 +1,26 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Orion AI</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>BEM-VINDO AO ORION AI</h1>
-            <h2>SUA EXPERIÊNCIA DE COMPRA MAIS RÁPIDA E INTELIGENTE!</h2>
+        <div class="text-section">
+            <h1>BEM-VINDO AO ORION AI<br>SUA EXPERIÊNCIA DE COMPRA MAIS RÁPIDA E INTELIGENTE!</h1>
+            <p class="subtitle">Cansado de perder tempo procurando produtos no mercado?</p>
+            <p class="description">Com o Orion AI, você encontra o que precisa em segundos! Nosso sistema usa inteligência artificial para localizar produtos no mapa da loja. Basta digitar o que procura:</p>
+            <p class="subtitle">Orion te mostra o caminho!</p>
+            <div class="search-box">
+                <input type="text" placeholder="Produto Procurado:">
+            </div>
         </div>
-        <div class="content">
-            <p class="intro">Cansado de perder tempo procurando produtos no mercado?</p>
-            <p>Com o Orion AI, você encontra o que precisa em segundos!<br>
-            Nosso sistema usa inteligência artificial para localizar produtos no mapa da loja.<br>
-            Basta digitar o que procura:</p>
-            <form method="POST">
-                <input type="text" name="produto" placeholder="Produto Procurado" required>
-                <button type="submit">Procurar</button>
-            </form>
-            {% if resultado %}
-                <div class="resultado">Localização: {{ resultado }}</div>
-            {% elif erro %}
-                <div class="erro">{{ erro }}</div>
-            {% endif %}
+        <div class="robot-image">
+            <img src="/static/images/robot.png" alt="Robô Orion AI">
         </div>
     </div>
 </body>
