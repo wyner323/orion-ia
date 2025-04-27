@@ -57,7 +57,7 @@ body {
 }
 
 .robot-image img {
-    width: 300px;
+    width: 500px;
 }
 
 @media (max-width: 768px) {
@@ -71,6 +71,6 @@ body {
     }
 
     .robot-image img {
-        width: 200px;
+        width: 400px;
     }
 }
