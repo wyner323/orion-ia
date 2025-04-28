@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -25,42 +24,66 @@ body {
     max-width: 600px;
 }
 
-.text-section h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+    .text-section h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
 
-.text-section .subtitle {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    font-family: 'Pacifico', cursive;
-}
+    .text-section .subtitle {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        font-family: 'Pacifico', cursive;
+    }
 
-.text-section .description {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
+    .text-section .description {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
 
 .search-box {
     margin-top: 20px;
 }
 
-.search-box input[type="text"] {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    color: #333;
-}
+    .search-box input[type="text"] {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        color: #333;
+    }
+
+    /* BOTÃO ESTILO */
+    .search-box button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 1.2em;
+        background-color: white;
+        color: #005bea;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+        .search-box button:hover {
+            background-color: #e0e0e0;
+        }
 
 .robot-image img {
     width: 500px;
 }
 
+/* Responsivo para tablets */
 @media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px 0;
+    }
+
     .container {
         flex-direction: column;
         text-align: center;
@@ -70,7 +93,29 @@ body {
         margin-top: 30px;
     }
 
+        .robot-image img {
+            width: 300px;
+        }
+}
+
+/* Responsivo para celulares */
+@media (max-width: 480px) {
+    .text-section h1 {
+        font-size: 2em;
+    }
+
+    .text-section .subtitle,
+    .text-section .description {
+        font-size: 1em;
+    }
+
+    .search-box input[type="text"],
+    .search-box button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
     .robot-image img {
-        width: 400px;
+        width: 250px;
     }
 }
